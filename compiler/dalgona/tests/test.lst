@@ -1,0 +1,22 @@
+singleOpTest(Add_000)
+#singleOpTest(Add_001)   # luci-interpreter does not handle 0-sized input
+singleOpTest(Add_U8_000)
+singleOpTest(Conv2D_000)
+singleOpTest(Conv2D_001)
+singleOpTest(Conv2D_002)
+singleOpTest(Conv2D_003)
+singleOpTest(Conv2D_U8_000)
+singleOpTest(Conv2D_U8_001)
+singleOpTest(DepthwiseConv2D_000)
+singleOpTest(DepthwiseConv2D_001)
+singleOpTest(DepthwiseConv2D_U8_000)
+#singleOpTest(DepthwiseConv2D_U8_001) # luci-interpreter does not support per-channel quantized DepthwiseConv2D kernel
+singleOpTest(FullyConnected_000)
+singleOpTest(FullyConnected_001)
+#singleOpTest(FullyConnected_002) # CIRCLEOUTPUTEXCLUDE is not yet supported in luci-interpreter
+singleOpTest(FullyConnected_003)
+#singleOpTest(FullyConnected_U8_000) # u8 fc layer is not yet supported in luci-interpreter
+singleOpTest(InstanceNorm_000)
+singleOpTest(InstanceNorm_001)
+singleOpTest(TransposeConv_000)
+singleOpTest(TransposeConv_001)
